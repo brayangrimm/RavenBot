@@ -16,7 +16,7 @@ module.exports = {
 
   onStart: async ({ message, role, args, event, threadsData }) => {
     const { threadID, senderID } = event;
-    const botName = global.GoatBot.config.name || "𝚂𝚄𝙿𝚁𝙴𝙼𝙴 ㋛ᗷOT";
+    const botName = global.GoatBot.config.name || "𝐄𝐕𝐀㋛ᗷOT";
 
     // Affichage stylisé si l'utilisateur écrit simplement "prefix"
     if (!args[0]) {
@@ -83,7 +83,7 @@ module.exports = {
     const { body, threadID } = event;
     if (body?.trim().toLowerCase() === "prefix") {
       const prefix = global.utils.getPrefix(threadID);
-      const botName = global.GoatBot.config.name || "𝚂𝚄𝙿𝚁𝙴𝙼𝙴 ㋛ᗷOT";
+      const botName = global.GoatBot.config.name || "𝐄𝐕𝐀 ㋛ᗷOT";
       return message.reply(
 `/)    /)───────◆
 (｡•ㅅ•｡) ❥${botName}
