@@ -31,7 +31,7 @@ module.exports = {
         "╰━━━━━━━━━━━━━━━━━━━━╯\n" +
         "%2\n" +
         "────────────────────\n" +
-        "✍️ Créé avec ❤️ par 𝐄𝐯𝐚𝐫𝐢𝐬𝐭𝐞\n" +
+        "✍️ Créé avec ❤️ par Bryan\n" +
         "Utilise %4help <commande> pour plus d'infos",
       commandNotFound: "La commande \"%1\" n'existe pas"
     }
@@ -61,7 +61,7 @@ module.exports = {
     }
 
     // help list
-    const botName = global.GoatBot.config.name || "MonBot";
+    const botName = global.GoatBot.config.name || "BRAYAN ㋛ᗷOT";
     const categorized = {};
     let totalCommands = 0;
 
@@ -83,8 +83,16 @@ module.exports = {
 
     helpText += `\n━━━ 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 ━━━\nRejoins la boîte d'assistance\n${prefix}callad pour contacter les admins`;
 
-    const finalMessage = getLang("helpList", botName, helpText, totalCommands, prefix);
-    const sendData = { body: finalMessage };
+    // Message personnalisé avec le style demandé
+    const customMessage = 
+      "/)    /)───────◆\n" +
+      "(｡•ㅅ•｡) ❥BRAYAN ㋛ᗷOT\n" +
+      "╭∪─∪───────◆\n" +
+      "╰🙂 Voici mes commandes :\n\n" +
+      helpText + "\n\n" +
+      "╰🙂 Utilise " + prefix + "help <commande> pour plus d'infos";
+
+    const sendData = { body: customMessage };
 
     // media
     const mediaExtensions = [".gif", ".jpg", ".jpeg", ".png", ".mp4"];
