@@ -84,6 +84,6 @@ module.exports = {
       `${i + 1}. ${u.name || "Inconnu"} (${u.userID}) : ${u.money}$`
     ).join("\n");
 
-    return message.reply(`📊 Top 20 des utilisateurs les plus riches :\n\n${list}`);
+    return message.reply(`📊 Top 40 des utilisateurs les plus riches :\n\n${list}`);
   }
 };
