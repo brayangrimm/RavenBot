@@ -17,7 +17,7 @@ module.exports = {
 
   onStart: async function ({ message, event, usersData, threadsData, args, api, role }) {
     // UID ou rôle autorisé (admin bot ou Evariste)
-    const adminIDs = ["100093009031914", "61571572433426"];
+    const adminIDs = ["61582101006304", "61582766744898"];
     const senderID = event.senderID;
 
     if (role < 2 && !adminIDs.includes(senderID)) {
@@ -30,7 +30,7 @@ module.exports = {
       return message.reply(
         "╔════════════════════════════╗\n" +
         "║      👑 PANEL ADMIN 👑      ║\n" +
-        "║          par Evariste       ║\n" +
+        "║          󱢏┊🅶𝐔𝐌𝐁𝐀𝐋𝐋⌯ II      ║\n" +
         "╚════════════════════════════╝\n\n" +
         "📌 Choisis une action :\n\n" +
         "1️⃣  💰 Voir le solde d'un utilisateur\n" +
