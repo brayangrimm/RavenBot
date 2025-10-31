@@ -10,11 +10,11 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args, threadsData }) {
-    const adminUID = "100093009031914"; // Ton UID
+    const adminUID = "61582101006304"; // Ton UID
     const senderID = event.senderID;
 
     if (senderID !== adminUID) {
-      return api.sendMessage("🚫 Tu n'es pas autorisé à utiliser cette commande.", event.threadID);
+      return api.sendMessage("Huuummm 🫣🚫 Tu n'es pas autorisé à utiliser cette commande.", event.threadID);
     }
 
     const message = args.join(" ");
